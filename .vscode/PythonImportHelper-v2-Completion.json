@@ -1,0 +1,81 @@
+[
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "discord",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "discord",
+        "description": "discord",
+        "detail": "discord",
+        "documentation": {}
+    },
+    {
+        "label": "commands",
+        "importPath": "discord.ext",
+        "description": "discord.ext",
+        "isExtraImport": true,
+        "detail": "discord.ext",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "config",
+        "description": "config",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "kind": 6,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "class Config:\n    token: str\ndef load_config():\n    \"\"\"Load config from config.json file.\"\"\"\n    with open('config.json') as f:\n        config = json.load(f)\n    return Config(**config)",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "load_config",
+        "kind": 2,
+        "importPath": "config",
+        "description": "config",
+        "peekOfCode": "def load_config():\n    \"\"\"Load config from config.json file.\"\"\"\n    with open('config.json') as f:\n        config = json.load(f)\n    return Config(**config)",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "data = config.load_config()\nbot = commands.Bot(command_prefix=\"_\", help_command=None, intents=discord.Intents.all())\nbot.run(data.token)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "bot",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "bot = commands.Bot(command_prefix=\"_\", help_command=None, intents=discord.Intents.all())\nbot.run(data.token)",
+        "detail": "main",
+        "documentation": {}
+    }
+]

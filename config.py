@@ -6,6 +6,7 @@ from typing import List
 class Config:
     token: str
     prefix: str
+    channel_id: int
     owners: List[str]
 
 def load_config():
